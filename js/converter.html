@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Converter Form</title>
+ <!-- 
+    
+    USING THE FORM BELOW WRITE A SCRIPT TO CONVERT AND DISPLAY
+    A TEMPERATURE INPUT IN CELSIUS INTO FAHRENHEITS 
+    INSIDE THE "txtresult"  ELEMENT AND VICE-VERSA.
+      
+  HINT: temp_in_fah = 9/5 * temp_in_cel + 32  
+        temp_in_cel = 5/9 * (temp_in_fah - 32) 
+  
+    -->
+</head>
+<body>
+    <form>
+    <fieldset style="border-radius: 8px ;">
+        <legend>TEMPERATURE CONVERTER</legend>
+        Temperature: <input id="temp" type="text"/><br><br>
+        Conversion Result: <br> 
+        <textarea id="txtresult"></textarea><br><br>
+        <button type="button" onclick="toFah()">To Fahrenheit</button>
+        <button type="button" onclick="toCel()">To Celsius</button>
+       
+    </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function toFah(){
+    var tempval = document.getElementById("temp").value;
+    var tempval = tempval.trim()
+    var val = parseFloat(tempval);
+    var result = (9/5 * val) + 32;               
+    var fahUnit = " Fahrenheits"
+    document.getElementById("txtresult").innerHTML = result.toFixed(1) + fahUnit;
+    // document.getElementById("L1").innerHTML = tempval; 
+    // document.getElementById("L2").innerHTML = val;
+
+
+    }
+
+    function toCel(){
+    var tempval = document.getElementById("temp").value;
+    var tempval = tempval.trim()
+    var val = parseFloat(tempval);
+    var result = 5/9 *(val - 32);               
+    var celUnit = " Celsius"
+    document.getElementById("txtresult").innerHTML = result.toFixed(1) + celUnit;
+    // document.getElementById("L1").innerHTML = tempval; 
+    // document.getElementById("L2").innerHTML = val;
+
+
+    }
+</script>
+    
+</body>
+</html>

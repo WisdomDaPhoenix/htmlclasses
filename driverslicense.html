@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DRIVERS LICENSE REGISTRATION/RENEWAL</title>
+    <style>
+        fieldset{
+            font-family: Cambria, sans-serif;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+<form>
+<fieldset style="width: 80%; border-color: darkblue; margin:auto; outline-width: 12px;
+ border-radius: 10px; background-color: cornsilk;">
+
+    <legend style="text-align: center; 
+    color: chocolate;">DRIVERS LICENSE REGISTRATION</legend>
+    NAME: <input type="text" name=""/><br><br>
+    DATE OF BIRTH: <input type="date" name="" /><br><br>
+    BLOOD GROUP: 
+    A <input type="radio" name="bg" value="grp_A"/>
+    B <input type="radio" name="bg" value="grp_B" />
+    O <input type="radio" name="bg" value="grp_O" /><br><br>
+    SEX: 
+    MALE <input type="radio" name="gen" value="MALE"/>
+    FEMALE <input type="radio" name="gen" value="FEMALE" /><br><br>
+    ADDRESS: <br><textarea rows="5" colspan="5" name=""></textarea><br><br>
+    LICENSE CLASS: 
+    CLASS B<input type="checkbox" name="class_B"/>
+    CLASS D<input type="checkbox" name="class_D"/>
+    CLASS F<input type="checkbox" name="class_F"/><br><br>
+    FACIAL MARKS: NO <input type="radio" name="FM" value="N"/>
+                  YES<input type="radio" name="FM" value="Y" /><br><br>
+    NO. OF REPLACEMENTS <input type="number" name="rep" /><br><br>
+    NO. OF RENEWALS <input type="number" name="ren" /><br><br>
+    UPLOAD PHOTO/IMAGE: <input type="file" name="file" /><br><br>
+    SIGNATURE <br>
+    <textarea rows="5" colspan="5" name="">
+    </textarea><br><br>
+
+    <button name="apply">APPLY</button>
+</fieldset>
+</form>
+</body>
+</html>

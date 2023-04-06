@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Weekday begins from sunday.
+getday() method returns weekday as a number(0 - 6) 
+with sunday as 0 -->
+
+<body>
+<p id="demo"></p><br><br>
+<p id="demo2"></p><br><br>
+<p id="demo3"></p><br><br>
+
+<h1>SHOW DATE AND TIME TODAY</h1><br>
+<script type="text/javascript"> 
+
+var d = new Date();
+var myDate = d.getDay(); 
+var myMonth = d.getMonth();          
+var days=["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday","Saturday"]
+var months = ["January", "February", "March","April", "May", "June","July",
+              "August","September","October","November","December"]
+
+var msgdate = "Today is: " + days[myDate];
+var msgtime = "Current time is: "+ d.getUTCHours() + ":"+ d.getUTCMinutes()
+                + ":" + d.getUTCSeconds();
+var msgmonth = "Month: "+months[myMonth];
+
+document.getElementById("demo").innerHTML = msgdate;
+document.getElementById("demo2").innerHTML = msgtime;
+document.getElementById("demo3").innerHTML = msgmonth;
+    
+</script>
+        
+      
+    
+</body>
+</html>

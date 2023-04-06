@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IMAGE TRANSITION</title>
+<style>
+    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.default {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    transition-property: opacity, transform;
+    transition-duration: 4s;
+    transition-delay: 0.6s;   
+    cursor: pointer;    
+}
+
+.default:hover {
+    transform: scale(0.5);
+    opacity: 0.3;
+    cursor: pointer;      
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia,'Times New Roman', serif;
+    font-size: 30px;
+    color: brown;
+    opacity: 0.5;
+}
+</style>
+</head>
+<body>
+    <img class="default" src="img/radox_moist.jpg"/>
+    <p>Get A Radox...</p>    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+<title>STACK ORDER/ORDERING</title>
+<style>
+    body {
+        display: flex;
+        padding: 80px;
+        background-color: maroon;        
+        flex-direction: row;    
+    }
+
+
+
+    
+
+    #circle1 {
+    position: relative;    
+    width: 240px;   
+    height: 240px;
+    border: 3px solid white;
+    border-radius: 100%;    
+    left: 240px;
+    background-color: chocolate;
+    z-index: 3;
+    
+    }
+    #circle2 {
+    position: relative;    
+    width: 240px;   
+    height: 240px;
+    border: 3px solid white;
+    border-radius: 100%;    
+    left: 120px;
+    background-color: chartreuse;
+    z-index: 2;    
+    }
+
+    #circle3 {
+    position: relative;    
+    width: 240px;   
+    height: 240px;
+    border: 3px solid white;
+    border-radius: 100%;       
+    background-color: fuchsia;
+    z-index: 1;    
+    }
+</style>
+
+</head>
+<body>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+
+    <!-- THE HIGHER THE Z-INDEX OF AN ELEMENT THE HIGHER ITS POSITION
+    ON THE STACK. Z-INDEX CAN ONLY BE USED WITH RELATIVELY POSITIONED
+    ELEMENTS -->
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML has the ability to let user events trigger actions in a browser
+(reactions) like execution of javascript code when a user clicks on a 
+element. Events are defined by user actions which lead to certain browser
+reactions or page behaviour -->
+
+
+<head>
+    <title>EVENTS: ONFOCUS, ONBLUR IN JAVASCRIPT</title>
+</head>
+
+<body>  
+
+   MY EMAIL ADDRESS: <input type="text" id="myemail">
+   <span id="inputmsg"></span><br><br>
+
+   NEXT ELEMENT: <input type="text" id="next">
+   
+    <script>
+        let myemail = document.getElementById("myemail");
+        let inputmsg = document.getElementById("inputmsg");
+        
+        myemail.onfocus = function(){
+            myemail.style.backgroundColor = "grey";
+            inputmsg.innerHTML = "Pls enter your email here";
+
+        };
+        myemail.onblur = function(){
+            myemail.style.backgroundColor = "red";
+            inputmsg.innerHTML = "";
+        };   
+        
+
+                
+    </script>
+
+</body>
+</html> 
+ 
+
+<!-- 
+Write a function/script that increases the size of an image as the user
+hovers over the image and returns it to its original size afterwards, 
+as user moves away from it.
+ -->
+
+<!-- WINDOW EVENTS
+1. onload - This fires after the page has finished loading.
+2. onmessage - This fires when the message is triggered.
+3. onoffline - It fires when a browser starts to work offline.
+4. onpageshow - This one fires when the user navigates to a page.
+5. onpagehide - This fires when the user navigates away from a page.
+6. onresize - This fires when a browser window is resized.
+
+FORM EVENTS
+1. onblur - This fires when the element in question loses focus.
+2. onchange -It fires the moment the value of an element is changed.
+3. onfocus - Fires the moment the element in question receives focus.
+4. oninput - Fires when an element gets user input
+4. oninvalid - The script will be run when an element is invalid.
+5. onselect - The script will run after some text has been selected.
+6. onsubmit - This fires when a form is submitted.
+
+KEYBOARD EVENTS 
+1. onkeydown - This fires when the user is pressing on a key.
+2. onkeypress - This fires when the user presses a key.
+3. onkeyup - This fires when a user releases a key.
+
+MOUSE EVENTS 
+1. onclick - Fires when there is a mouse click on an element.
+2. onmouseover - Fires when the mouse pointer moves over an element.
+3. onmouseout - Fires when the mouse pointer moves out of an element.
+4. ondoubleclick/ondblclick - Fires when the mouse double-clicks on an element.
+5. onwheel - Fires when the mouse wheel rolls up and down over an element.
+6. onmousedown - This one fires when the mouse button is pressed down on an element.
+7. ondrag - This fires when an element is dragged.
+8. ondrop - This fires when the element is dropped.
+ -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<body>
+<h3 id="actors">MOVIE ACTORS AND ACTRESSES</h3>
+<p id="actor1">Scarlett Johanssen</p>
+<p id="actor2">Milla Jovovich</p>
+<p id="actor3">Dwayne Johnson</p>
+
+-------------------- DISPLAY HERE ----------------------
+<h2 id="showheading"></h2>
+<p id="show1"></p>
+<p id="show2"></p>
+<p id="show3"></p>
+
+<!-- WITH THE USE OF A BUTTON, FUNCTION AND VARIABLES, DISPLAY THE CONTENTS OF 
+    ALL ELEMENTS ABOVE (ACTORS INFO) INSIDE THE EMPTY ELEMENTS
+    (showheading, show1, show2 and show3).
+
+    WHEN A USER DOUBLECLICKS THE BUTTON:
+    a. Display actors information on your page
+    b. Display actors information on the console
+-->
+
+
+
+
+
+
+
+
+<button type="button" ondblclick="showActors()">DISPLAY ACTORS</button>
+
+<script>
+    function showActors(){
+        var head = document.getElementById('actors');
+        var act1 = document.getElementById('actor1').innerHTML;
+        var act2 = document.getElementById('actor2').innerHTML;
+        var act3 = document.getElementById('actor3').innerHTML;
+
+
+        document.getElementById('showheading').innerHTML = head;
+        document.getElementById('show1').innerHTML = act1;
+        document.getElementById('show2').innerHTML = act2;
+        document.getElementById('show3').innerHTML = act3;
+
+
+        console.log(head)
+        console.log(act1)
+        console.log(act2)
+        console.log(act3)
+
+    }
+</script>
+
+
+
+
+</body>
+</html>

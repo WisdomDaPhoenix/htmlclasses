@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>
+<p id="demo" style="cursor: pointer;" 
+onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+I am your default content!</p>
+
+    
+
+<p id="demo1">Chelsea</p>  // Liverpool
+<p id="demo2">Barcelona</p> // Real Madrid
+<p id="demo3">Dortmund</p> //  Bayern 
+<button onclick="swapClubs()">CLICK HERE!</button>
+
+
+<p id="pelement">Hey guys, Where are you?</p> // In Class learning Javascript
+<h3 id="headelement">QUESTION!</h3> // ANSWER
+<button onclick="change()">Click me!</button>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // var x = "Volvo" + 16 + 4;
+        // document.getElementById("seconddemo").innerHTML = x;
+
+        function swapClubs() {
+            var x = document.getElementById("demo1");
+            var y = document.getElementById("demo2");
+            var z = document.getElementById("demo3");
+
+            x.innerHTML = "Liverpool";
+            y.innerHTML = "Real Madrid";
+            z.innerHTML = "Bayern Munich";
+        }
+
+
+        function change() {
+            var w = document.getElementById("pelement");
+            var e = document.getElementById("headelement");
+
+            w.innerHTML = "We are in class learning JavaScript.";
+            e.innerHTML = "ANSWER!";
+            e.style.color = "red";
+            w.style.fontSize = "50px";
+        }
+    </script>
+</body>
+</html>

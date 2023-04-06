@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body onload="hello()">
+<p id="demo"></p>
+<p id="demo2">Where are you guys ?</p>
+    
+<button ondblclick="getAnswer()">CLICK ME!</button>
+<!-- HTML CODE ENDS HERE -->
+
+<script>
+var x = document.getElementById("demo");
+x.innerHTML = 5 + 6;
+
+function hello() {
+    alert("Hello JavaScript");
+}
+
+
+function getAnswer(){
+    document.getElementById("demo2").innerHTML = "In Class Learning Javascript!"
+
+    }
+</script>    
+<!-- JAVASCRIPT ENDS HERE -->
+</body>
+</html>

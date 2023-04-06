@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WORKING WITH OBJECTS</title>
+<!-- OBJECTS ARE DATATYPES THAT CONTAIN RELATED INFORMATION.
+THEY ARE DEFINED USING THE CURLY BRACES AND CONTAIN PROPERTIES.
+EACH PROPERTY IN AN OBJECT HAS ITS DEFINED VALUE -->
+</head>
+
+<body>
+    <center><h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+     sans-serif; color: indianred;">ABOUT BARCELONA</h1></center>  
+    
+    <p id="name"></p>
+    <p id="president"></p>
+    <p id="fanbase"></p>    
+    <p id="winstats"></p>
+    <p id="loss_stats"></p>
+    <p id="reason"></p>
+<script>
+
+// WHAT OBJECTS CAN CONTAIN(Datatypes - strings, numbers, 
+// arrays, functions) 
+  
+var club = {
+    name: "Barcelona",
+    president: "Joan Laporta",
+    fanbase: "2.1 million",
+    coach: "Xavi Hernandez",
+    stats: ["24 wins", "5 losses"],
+    myReason: function(){
+        let r = "I love Barca because of its football culture";
+        console.log(r);
+    }
+}
+document.getElementById("name").innerHTML = club.name;
+document.getElementById("president").innerHTML = club.president;
+document.getElementById("fanbase").innerHTML = club.fanbase;
+document.getElementById("winstats").innerHTML = club.stats[0];
+
+
+var king = {
+    name: "Arthur",
+    age: 40,
+    status: "Married",
+    hobbies: ['hunting','reading'],
+    kingdom: "Camelot",
+    showkingStatus: function(){
+
+        console.log(king.status);
+    }
+  };
+
+    
+
+// DISPLAYING OBJECT PROPERTIES ON THE CONSOLE
+
+console.log(king.showkingStatus());
+console.log(king.name);
+console.log(king.age);
+console.log(king.hobbies);
+console.log(king.hobbies[1]);
+console.log(king["kingdom"]);
+
+// DELETING PROPERTIES
+// delete objectname.property
+// e.g delete king.status
+// king.age = 45;
+// console.log(king.age)
+
+
+
+// LOOPING THROUGH OBJECTS
+// for (x in king){
+//     console.log(king[x]);
+// }
+
+// for (x in king){
+//     if (king[x] == "Camelot") 
+//       {
+//         console.log("King of "+ king[x]);
+
+
+//     }
+// }
+ 
+</script>
+    
+</body>
+</html>

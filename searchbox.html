@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/all.css" />
+   <title>WORKING WITH ICONS</title>
+
+    <style>
+       body {
+           background-color: white;
+           
+       }
+       
+        #searchbox {
+            position: absolute;
+            left: 720px;
+            top: 25px;
+            width: 450px;
+            height: 60px;
+            border: 2px solid orangered;
+            box-shadow: 4px 3px 3px greenyellow;
+        }
+       
+        #bottomframe {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+            height: 300px;
+            background-color: black;
+            padding: 38px;
+        }
+
+        .iconbox {
+            width: 260px;
+            height: 200px;
+            float: left;
+            background-color: none;
+            border-radius: 8px;
+            margin-right: 38px;
+            padding: 8px;
+            border: 3px solid whitesmoke;
+        }
+
+
+        .iconbox p {
+            font-family: Cambria, Georgia, serif;
+            font-size: 18px;
+            color:royalblue;
+            line-height: 25px;
+            text-align: justify;
+            
+        }
+        #call {
+            width: 140px;
+            height: 40px;
+            margin: 10px auto;
+            background-color: royalblue;
+            padding: 6px;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        
+        #message {
+            width: 140px;
+            height: 40px;
+            margin: 10px auto;
+            background-color: royalblue;
+            padding: 6px;
+            border-radius: 9px;
+            cursor: pointer;
+
+        }
+        #location {
+            width: 140px;
+            height: 40px;
+            margin: 10px auto;
+            background-color: royalblue;
+            padding: 6px;
+            border-radius: 9px;
+            cursor: pointer;
+
+        }
+        #download {
+            width: 140px;
+            height: 40px;
+            margin: 10px auto;
+            background-color: royalblue;
+            padding: 6px;
+            border-radius: 9px;
+            cursor: pointer;
+
+        }
+        
+        button {
+            position: absolute;
+            left: 1180px;
+            top: 25px;
+            width: 150px;
+            height: 60px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            display: inline-block;
+            /* font-family: Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: bold; */
+        }
+        h3 {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 2px;
+            text-shadow: 4px 3px 3px goldenrod;
+            
+        }
+
+        .fa-magnifying-glass { 
+            color: white;
+            
+        } 
+        .fa-eject {
+            font-size: 70px;
+            color: blue;
+        }
+        
+
+        .fa-phone-flip {
+            font-size: 30px;
+            color: white;
+            margin-right: 12px;           
+        }
+        
+        .fa-message{
+            font-size: 30px;
+            color: white;
+            margin-right: 12px;
+        }
+        .fa-location-pin {
+            font-size: 30px;
+            color: white;
+            margin-right: 12px;
+        }
+        .fa-download {
+            font-size: 30px;
+            color: white;
+            margin-right: 12px;
+        }
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 15px;
+            text-transform: uppercase;
+           
+        }
+  
+    </style>
+</head>
+<body>   
+   <input type="search" id="searchbox" 
+   placeholder="Type to search here...">
+
+   <button type="button">
+    <i class="fa-solid fa-magnifying-glass"></i> Search
+    </button>
+
+   <i class="fa-solid fa-eject"></i><br>  
+   
+
+   <div id="bottomframe">
+       <h3>Font Awesome Style Icons</h3>
+       <div class="iconbox">
+          <div id="call">
+            <i class="fa-solid fa-phone-flip"></i>
+            <span class="text">Call Us</span>
+        </div><!-- closed call -->
+        
+        <p>
+           We are available 24hrs, 7 days a week on our hotlines. Customer
+           service support available also
+           on weekends
+       </p>
+       </div><!-- closed iconbox -->
+       <div class="iconbox">
+          <div id="message"><i class="fa-solid fa-message"></i>
+            <span class="text">Message</span></div><!-- closed message -->
+        <p>
+           Send a message today. Our support email is johndoe@gmail.com
+           Customer support available.
+m        </p>        
+       </div><!-- closed iconbox -->
+       <div class="iconbox">
+          <div id="location"><i class="fa-solid fa-location-pin"></i>
+           <span class="text">Location</span></div><!-- closed location -->
+       <p>
+          Visit our offices today. Head office at 5, Maryland Avenue, 
+          Seychelles
+       </p></div><!-- closed iconbox -->
+       <div class="iconbox">
+        <div id="download"><i class="fa-solid fa-download"></i>
+        <span class="text">Download</span></div><!-- closed download -->
+       <p>
+          Download a brochure of events we have organized.
+        </p></div><!-- closed iconbox -->
+   </div><!-- closed bottomframe -->
+</body>
+</html>
+

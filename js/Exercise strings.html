@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onload="printing()">
+    
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>  
+</body>
+
+<script>
+    // EMPHASIS USING ESCAPE CHARACTER STRING
+
+    // EXAMPLE 1
+       var answer = "It's alright";
+       var answer = 'It\'s alright';
+       
+
+    // EXAMPLE 2
+    var answer ="He is called 'Johnny'";  // BEST PRACTICE
+    var answer = 'He is called "Johnny"';
+
+    function printing() {
+        
+        var x = "John";                // STANDARD STRING
+        var y = new String("john");    //OBJECT STRING
+
+  
+        document.getElementById("demo2").innerHTML = typeof x;
+        document.getElementById("demo3").innerHTML = typeof y;
+    }
+</script>
+</html>

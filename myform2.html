@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        body {
+            background: rgba(255, 255, 0, 0.603);
+        }
+
+        h1, h4 {
+            font-family: 'Verdana';
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>PlaceMe, Inc.</h1>
+        <h4>Job Seekers Registration form!</h4>
+    </center>
+    <form>
+        <div style="margin-bottom: 40px;">
+            <h3>LOGIN DETAILS</h3>
+            Username: <span style="margin-left:40px;"><input type="text" name="username"></span>
+        </div>
+        <div style="margin-bottom: 40px;">
+            <h3>PERSONAL DETAILS</h3>
+            First Name: <span style="margin-left:60px;"><input type="text" name="First name"></span><br>
+            Email Address: <span style="margin-left:60px;"><input type="text" name="First name"></span><br>
+            Phone Number: <span style="margin-left:60px;"><input type="text" name="First name"></span>
+        </div>
+        <div style="margin-bottom: 40px;">
+            <h3>PROFESSIONAL DETAILS</h3>
+            Experience (in years): <span style="margin-left:60px;"><input type="text" name="First name"></span><br>
+            Job Category:
+            <span style="margin-left:60px;">
+                <select name="jobs">
+                    <option>AI/ML Reasearcher</option>
+                    <option>Data Scientist</option>
+                    <option>Mathematician</option>
+                    <option>Evolutionary Psychologist</option>
+                </select>
+            </span>
+        </div>
+        <div style="margin-bottom: 20px;">
+                <h3>QUALIFICATIONS</h3>
+                Degree Held:
+                <span style="margin-left:60px;">
+                    <select name="degrees">
+                        <option>BsC</option>
+                        <option>MsC</option>
+                        <option>PhD</option>
+                        <option>MD</option>
+                    </select>
+                </span><br>
+                Specialization:
+                <span style="margin-left:60px;">
+                    <select name="specializations">
+                        <option>Supervised Learning</option>
+                        <option>Business Data</option>
+                        <option>Chaos Theory/ Game Theory</option>
+                        <option>Memetics</option>
+                    </select>
+                </span>
+        </div>
+        <input type="submit" value="submit">
+        <input type="reset" value ="reset">
+    </form>
+    
+</body>
+</html>

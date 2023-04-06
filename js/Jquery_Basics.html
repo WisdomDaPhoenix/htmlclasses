@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>INTRO TO JQUERY</title>
+<script src="jquery-3.6.0.min.js"></script>  
+ <style>
+     body {
+         background-color: cadetblue;
+     }
+     .myclass {
+         font-family: Impact, sans-serif;
+         color: darkred;
+         font-size: 45px;
+         text-align: center;
+     }
+ </style>
+</head>
+<body>
+    <h2 class="myclass">TUTORIAL ON JQUERY</h2>
+
+    <!-- P ELEMENTS -->
+
+    <p>HELLO GUYS!</p><br>
+    <p>WE ARE IN CLASS</p><br>
+    <p id="demo">LEARNNG</p><br>
+    <p id="demo2">JQUERY</p><br><br>
+    
+
+    
+    <!-- BUTTONS -->
+
+    <button id="show_p">SHOW PELEMENT</button>
+    <button id="hide_p">HIDE PELEMENT</button>
+    <button id="toggle_p">TOGGLE PELEMENT</button>
+    <button id="show_h2">SHOW HELEMENT</button>
+
+<!-- JQUERY CODE INSIDE SCRIPT TAGS, JAVASCRIPT CODE ALSO GOES 
+    HERE -->
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $(".myclass").click(function(){
+            $(this).hide(4000); 
+        });
+        $("#hide_p").click(function(){
+            $("p").hide(); 
+        });
+        $("#show_p").click(function(){
+            $("p").show(); 
+        });  
+        $("#show_h2").click(function(){
+            $(".myclass").show(); 
+        });  
+        $("#toggle_p").click(function(){
+            $("p").toggle(); 
+        });                           
+    
+});  
+</script>
+</body>
+</html>

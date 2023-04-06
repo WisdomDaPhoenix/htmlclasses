@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(3, 105, 3);
+            font-family: 'Verdana';
+        }
+
+        .formlayout {
+            margin: auto;
+            background-color: rgb(7, 6, 6);
+            width: 400px;
+            height: 400px;
+            padding-top: 80px;           
+            
+        }
+        .mystyle {
+            color: white;
+            
+        }
+
+        h2 {
+            font-size: 40px;
+            /* color: white; */
+            margin-left: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        button {
+            width: 300px; 
+            height: 40px; 
+            border-radius: 2px; 
+            background-color: rgb(3, 105, 3);
+            border: 0px; 
+            font-size: 15px; 
+            margin-bottom: 20px; 
+            color: white;
+        }
+
+        button:hover {
+            border: 2px white solid;
+            background-color: black;
+            color: white;
+            width: 300px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            
+        }
+        
+    </style>
+</head>
+<body>
+<h2 class="mystyle">LOGIN NOW</h2>
+<div class="formlayout">
+
+<center>
+<p style="color: white;">Sign in to your account.</p><br>
+<div class ="emailarea"> 
+<p style="margin-bottom: 4px; margin-right: 250px;" class="mystyle">Email</p>
+<input type="text" name="E-mail" style="width: 300px; height: 40px;
+border-radius: 2px; border: 0px;">
+</div><!-- closes emailarea -->
+
+<div class ="passwordarea">
+<p style="margin-bottom: 4px; margin-right: 230px;" class="mystyle">Password</p>
+<input type="password" name ="Password" style="width: 300px; height: 40px; 
+border-radius: 2px; margin-bottom: 20px; border: 0px;">
+</div><!-- closes passwordarea -->
+<button>Continue</button><br>
+<a href="#">Forgot Password</a>
+</center>
+</div><!-- closes formlayout -->
+</body>
+</html>

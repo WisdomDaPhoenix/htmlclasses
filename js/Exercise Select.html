@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>SELECT</title>
+</head>
+<body>
+    <h1> WANT TO KNOW ABOUT OUR STATE OFFICES, SELECT A STATE:</h1><br><br>
+    <p id="content"></p>
+    SELECT A STATE:  
+    <select name="state">
+        <option value="lag">LAGOS</option>
+        <option value="abj">ABUJA</option>
+        <option value="kad">KADUNA</option>
+         
+    </select><br><br>
+    <button type="button" onclick="showaddress()">SHOW ADDRESS</button>
+    <script>
+    var st = document.getElementById("state").value;
+    var st = st.trim();
+   
+    var text = "";
+    function showaddress(st,text) {      
+        
+        switch (st) {
+            case "lag":
+                text = "20, Lekki Phase 1, Lekki";
+                document.getElementById("content").innerHTML = text;
+                break;
+            case "abj":
+                document.getElementById("content").innerHTML = "16, Gwarinpa Crescent, GRA";
+                break;
+            case "kad":
+                document.getElementById("content").innerHTML = "1, Airforce Base, Maina";
+                break;
+            default:               
+                document.getElementById("content").innerHTML = "You need to pick a state";           
+        }
+    }
+    </script>
+    
+</body>
+</html>

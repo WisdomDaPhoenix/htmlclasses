@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo2"> Why do I love JavaScript?</h1>
+    <p id="demo">JavaScript can change the style of an HTML element</p>
+
+    <p id="anotherdemo"> Check it out, cool right?</p>
+
+    <button onclick="myFunction(), changeContent(), changer()">Click me!</button>
+
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById('demo');
+            x.style.fontSize = "45px";
+            x.style.color = "crimson";
+        }
+
+        function changeContent() {
+            var y = document.getElementById("demo2");
+            y.innerHTML = "Because it can do all sorts of incredible things!"
+        }
+
+        function changer() {
+            var w = document.getElementById('anotherdemo');
+            w.style.textDecoration = 'underline';
+            w.style.color = 'powderblue';
+            w.style.fontSize = '50px';
+            w.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+</html>

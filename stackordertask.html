@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TASK: STACKORDER</title>
+<style>
+body {
+    display: flex;
+    flex-direction: row;    
+    padding: 46px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}    
+#bar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 45px;
+    opacity: 0.5;
+    /* background-color: red; */
+    padding: 3px;
+    
+}
+
+marquee {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hotpink;
+    
+}
+
+.effect {
+    position: relative;    
+    opacity: 0.5;    
+   
+}
+
+</style>
+</head>
+<body>   
+<div id="bar">
+<marquee direction="left" scrollamt="8">
+    USING DIFFERENT INTENSITIES OF RED AS AN OVERLAY COLOR, STACK THE 
+    FOLLOWING IMAGES AS SHOWN
+</marquee>
+
+</div>
+<img class="effect" src="img/Astonish_Kitchen_clean_cropped.png"
+ style="z-index: 1; left: 30px;"/>
+
+<img class="effect" src="img/Astonish_Kitchen_clean_cropped.png" 
+style="opacity: 1; z-index: 3;"/>
+
+<img class="effect" src="img/Astonish_Kitchen_clean_cropped.png" 
+style="opacity: 0.3; z-index: 2; right: 30px;"/>
+
+    
+</body>
+</html>

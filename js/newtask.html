@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            margin: 100px;
+        }       
+        
+        table, th, td {
+            font-family: Arial, Helvetica, sans-serif;
+            color:orangered;
+        }
+        h2 {
+            font-family: cursive;
+            justify-content: center;
+            size: 4em;
+            color: palevioletred;
+        
+        }
+    </style>
+    
+  
+</head>
+<body>
+    <h2>HIS AND HERS DATING</h2>
+    
+<p id="msg"></p>
+<form>
+    <fieldset style="width: 70%;border-color: red; border-radius: 25px; 
+    background-color: pink;">
+        <legend style="text-align: center;color: blanchedalmond;
+        font-weight: bolder;color: palevioletred">LET'S KNOW YOU</legend>
+        <table style="margin: auto;">
+            <tr>
+                <th align="left">PERSONAL DETAILS</th>
+            </tr>
+            <tr>
+                <td>Fullname(s):</td>
+                <td><input type="text" id="full_name"></td>
+                
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>Male<input type="radio" name="g">
+                    Female<input type="radio" name="g">
+                    Other<input type="radio" name="g">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="pass"></td>
+            </tr> 
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="text" id="repass"></td>
+            </tr>  
+            <tr>      
+                <td valign="top">
+                    Describe Yourself: 
+                </td>
+                <td>
+                <textarea id="desc" rows="30" cols="45" maxlength="60"></textarea> 
+                </td>
+            </tr>
+            <tr><td>Characters: <p id="chars"></p></td><td></td>
+            </tr>   
+        </table>
+        
+        <div id="btn_box">
+            <input type="submit" value="REGISTER">
+            <input type="reset" value ="RESET">
+        </div> 
+                   
+            </fieldset>
+        </form>
+        
+    <script>
+               
+        var msg = document.getElementById('msg');  
+        var fullname = document.getElementById('full_name'); 
+        var pass = document.getElementById('pass');
+        var userdesc = document.getElementById('desc');        
+        let count = 0;
+        
+            fullname.onchange = function(){ 
+            let name = fullname.value;      
+            let firstname = name.slice(0,name.indexOf(' '));            
+            console.log(firstname);            
+            msg.innerHTML = "Welcome " + firstname;           
+
+        }   
+                
+        pass.oninput = function(){
+            let passval = document.getElementById('pass').value;
+            document.getElementById('repass').value = passval;
+        }  
+        userdesc.oninput = function(){  
+            x = document.getElementById("chars");                          
+            x.innerHTML = count+=1;
+            
+        }
+       
+        
+        
+
+
+        
+    
+    
+    </script>
+
+    
+</body>
+</html>

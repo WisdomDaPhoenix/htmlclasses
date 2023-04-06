@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+ <title>FORM VALIDATION TWO</title>
+</head>
+<body>
+<h2>VALIDATE A NUMBER INPUT WITH JAVASCRIPT</h2>
+<hr>
+Input Number between 20 and 400: <input id="mynumb" type="number"
+ min="20" max="400" required />
+<p id="res"></p>
+
+<button type="button"  onclick="validateNum()">SUBMIT</button>
+<script>
+    
+function validateNum() {
+const mynumber = document.getElementById("mynumb");            
+console.log(!mynumber.checkValidity());
+
+if (!mynumber.checkValidity()) {    
+    document.getElementById("res").innerHTML = mynumber.validationMessage;
+}
+else {
+    document.getElementById("res").innerHTML = "Correct Input Sir!";
+}    
+}
+</script>
+
+    
+</body>
+</html>

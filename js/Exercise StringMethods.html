@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myname"/>
+
+    <p id ="p1">Please locate where beans occurs! I ate beans today!</p>
+    <p id = "p2">Please locate where beans occurs! I ate beans today! I do
+         really love beans!</p>
+    <p id="ul">Ultra</p>
+    <p id="vl">violet</p> 
+   
+
+
+    <button onclick="myFunction()">Find my Position</button>
+
+
+
+
+
+    <!-- <button onclick="loopstr()">LOOP</button>
+    <button onclick="loopstr2()">LOOP SECOND</button> -->
+    <p id = "demo"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
+    <p id = "demo6"></p>
+    <p id = "demo7"></p>
+    <p id = "demo8"></p>
+    <p id = "demo9"></p>
+    <p id = "p2sub"></p>
+    <p id = "demo10"></p>
+    <p id = "demo11"></p>
+
+    <script>
+        function loopstr() {
+            var trait = "NOISY";
+            for (c of trait) {
+                alert(c);
+            }
+        }
+
+        function loopstr2() {
+            var trait2 = "NOISY";
+            for (c in trait2) {
+                alert(trait2[c]);
+            }
+        }
+
+        
+
+            // var y = "Her email is bisola@gmail.com, phone mumber is 08155183042. Thanks support!";
+            // var email = y.substr(y.indexOf("bisola"), 16);
+            // var number = y.substr(y.indexOf("08"), 11)
+
+            // console.log(email);
+            // console.log(number);
+
+
+
+        function myFunction() {
+
+            var str = document.getElementById("p1").innerHTML;
+            var str2 = document.getElementById("p2").innerHTML;
+            var u = document.getElementById("ul").innerHTML;
+            var v = document.getElementById("vl").innerHTML;
+            var pos = str.indexOf("beans");
+            var lastpos = str.lastIndexOf("beans");
+            var searchpos = str.search("beans");
+            var myslice = str.slice(-6,-1);
+                       
+            var sub = str.substring(7,13);
+            var p2sub = str2.substr(7,6);
+            var newstr = str2.replace("beans","rice");
+            var repall = str2.replace(/beans/g,"rice");  
+            var findchar = str2.charAt(4);
+            var size = str2.length;
+            var c = u.concat(v);
+            var myname = document.getElementById("myname").value;
+
+       
+
+            document.getElementById("demo").innerHTML = pos;
+            document.getElementById("demo2").innerHTML = lastpos;
+            document.getElementById("demo3").innerHTML = searchpos;
+            document.getElementById("demo4").innerHTML = myslice;
+            document.getElementById("demo5").innerHTML = sub;
+            document.getElementById("p2sub").innerHTML = p2sub;
+            document.getElementById("demo6").innerHTML = newstr;
+            document.getElementById("demo7").innerHTML = repall;
+            document.getElementById("demo8").innerHTML = findchar;
+            document.getElementById("demo9").innerHTML = size;
+            document.getElementById("demo10").innerHTML = c;
+            document.getElementById("demo11").innerHTML = myname;
+
+            
+        }  
+
+         // Others are concat, valueOf, toString, trim etc.
+
+       
+    </script>
+</body>
+</html>

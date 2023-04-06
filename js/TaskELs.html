@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>EL TASK</title>
+</head>
+<body>
+
+
+    <H2 id="bigboy">I'M A BIG BOY. CLICK ME!</H2>
+
+    <p id="two">2</p>
+    <p id="four">4</p>
+    <p id="jstext" style="color:darkmagenta; 
+    font-size: larger; font-weight: 800;">JAVASCRIPT IS FUN</p>
+    <p id="angrytxt">GET ME OUT OF HERE!</p>
+
+<script>
+
+document.getElementById("bigboy").addEventListener("click", changeNums);
+document.getElementById("bigboy").addEventListener("click", changeJsText);
+document.getElementById("bigboy").addEventListener("mouseleave",empty);
+document.getElementById("bigboy").addEventListener("mouseleave",pgcolor);
+
+
+function changeNums(){
+    document.getElementById("two").innerHTML = 1;
+    document.getElementById("four").innerHTML = 3;
+}
+
+function changeJsText(){
+    document.getElementById("jstext").innerHTML = "JAVASCRIPT SUCKS!";
+    document.getElementById("jstext").style.color = "white";
+}
+
+function empty(){
+    document.getElementById("angrytxt").innerHTML = "";
+ 
+}
+
+function pgcolor(){
+    document.body.style.backgroundColor = "cadetblue";
+    document.getElementById("bigboy").innerHTML = "BIG BOYS RULE!";
+}
+</script>
+</body>
+</html>

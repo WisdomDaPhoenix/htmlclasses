@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TABLES</title>
+<style>
+body {
+    background-attachment: fixed;
+    background-image: url("");
+    background-repeat: repeat;
+}
+
+table, th, td {
+    border: 1px solid powderblue;
+    border-collapse:  collapse;       
+}
+
+th, td {            
+    font-family: sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2 style="color: black;">Cell that spans three rows:</h2>
+<table style="width: 80%;" >
+<caption style="font-family: Verdana, sans-serif; color: chartreuse; 
+font-weight: bolder;">BILLIONAIRES IN AMERICA</caption>
+<tr>
+    <th rowspan="3">Name:</th>
+    <td>Bill Gates</td>
+</tr>
+<tr>
+    <td>Elon Musk</td>
+</tr>
+<tr>
+    <td>Warren Buffet</td>
+</tr>
+<tr style="background-color: chartreuse;">
+    <th>Address:</th>
+    <td>New Jersey</td>
+</tr>
+<tr>
+    <th rowspan="2">Telephone:</th>
+    <td>555 77 854</td>
+</tr>
+<tr>
+    <td>555 77 855</td>
+</tr>         
+</table>
+
+<h2 style="color: black;">Cell that spans four columns:</h2>
+<table width="80%">
+<thead>            
+<tr>
+    <th colspan="4">Patients Details:</th>                
+</tr>             
+<tr>
+    <th>Patient Name</th>
+    <th>Patient ID</th>
+    <th>Date of Admission</th>
+    <th>Diagnosis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Mary Slessor</td>
+    <td>RD0015</td>
+    <td>Tuesday</td>
+    <td>Ulcer</td>
+</tr>
+<tr>
+    <td>John Doe</td>
+    <td>RD0016</td>
+    <td>Saturday</td>
+    <td>Arterioclerosis</td>
+</tr>
+<tr>
+    <td>William Brown</td>
+    <td>RD0017</td>
+    <td>Sunday</td>
+    <td>Arthritis</td>
+</tr>
+</tbody>
+<tfoot>
+<tr style="background-color: red; color: antiquewhite;">  
+    <td colspan="4">A CROSS-SECTION OF PATIENTS IN WARD 9</td>              
+</tr>
+</tfoot>   
+</table>
+
+</body>
+</html>

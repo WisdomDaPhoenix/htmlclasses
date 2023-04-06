@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+ <title>FORM VALIDATION</title>
+</head>
+<body>
+<h2>VALIDATE A NUMBER INPUT WITH JAVASCRIPT</h2>
+<hr>
+Input Number between 20 and 400: <input id="mynumb" type="number" />
+<p id="res"></p>
+<button onclick="checkNum()">NEXT</button>
+<hr>
+
+
+<p id="check"></p>
+<h2>VALIDATE A TEXT INPUT WITH JAVASCRIPT</h2>
+<form name="demoform">
+Enter Firstname: <input type="text" id="firstname"/>
+Enter Lastname: <input type="text" id="lastname"/>
+<button type="button"  onclick="register()">REGISTER</button>
+</form>
+
+<script>
+function register() {
+    var fval = document.forms["demoform"]["firstname"].value;
+    var lval = document.forms["demoform"]["lastname"].value;   
+    if (!(fval && lval)) {    //If not both fields have been filled...(3 possibilities)
+        document.getElementById("check").innerHTML = "Empty fields!";    
+    }           
+    else {
+        document.getElementById("check").innerHTML = "Congratulations! Successful Registration"; 
+    }    
+}
+
+function checkNum() {
+    var x = document.getElementById('mynumb').value;            
+
+    if (isNaN(x) || x < 20 || x > 400) {
+        document.getElementById("res").innerHTML = "Invalid Input";
+    }
+    else {
+        document.getElementById("res").innerHTML = "Correct Input";
+
+    }
+}
+ </script>
+</body>
+</html>

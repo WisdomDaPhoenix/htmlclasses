@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TRANSPARENT OVERLAYS WITH COLORS</title>
+<style>
+.bgbanner {
+    /* background-image: url(img/April_handwash.jpg); */
+    background: linear-gradient(rgba(243, 161, 9, 0.3),rgba(243, 161, 9, 0.801)),
+    url(img/April_handwash.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stretch {     
+    width: 1141px;
+    /* opacity: 0.5;
+    background-color: rgb(226, 16, 16);     */
+    background-size: cover; 
+    background-color: rgba(226, 16, 16, 0.5);   
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;  
+}
+.stretch:hover {    
+    background: rgba(226, 16, 16, 0.15);
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <div class="bgbanner">
+        <div class="stretch">
+          <h1>HTML Made Simple!</h1>
+        </div> <!-- close stretch -->
+    </div>  <!-- close bgbanner -->
+</body>
+</html>
+
+
+
+
+
+
+
+ <!-- h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
+img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -2;
+
+}  -->
+
+
+
+<!-- <img src="img/color_cake.jpg" /> -->

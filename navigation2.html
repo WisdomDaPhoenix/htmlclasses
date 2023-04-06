@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DISPLAY NAVBAR FLEX</title>
+    <style>
+        body {
+            background-color: palegreen;
+        }
+
+        #container {
+            width: 1136px;
+            height: 600px;
+            margin: 20px auto;
+            background-color: black;
+        }
+
+        #nav {
+            width: auto;
+            height: auto;
+            background-color: teal;
+            border: 4px solid brown;
+            display: flex;
+            flex-direction: row;
+        }
+        #nav a {
+            color: blanchedalmond;
+            width: 183px;
+            padding: 5px 2px;
+            height: 30px;
+            font-family: sans-serif;
+            font-size: 13px;
+            text-align: center;
+            border-right: 1px solid brown;
+            text-decoration: none;
+        }
+
+        #nav a:hover {
+            color: coral;
+            font-size: 13px;
+            background-color: aquamarine;
+            border-right: 1px solid brown;
+            width: 183px;
+            font-family: sans-serif;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #mainbox {
+            width: auto;
+            height: 560px;
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id ="nav">
+            <a href="#">HOMEPAGE</a>
+            <a href="#">OUR PRODUCTS</a>
+            <a href="#">GALLERY</a>
+            <a href="#">ORDERS</a>
+            <a href="#">CONTACT</a>
+            <a href="#" style="margin-bottom: 0px;">CHAT NOW</a>
+        </div>
+        <div id="mainbox"></div>
+       
+    </div>
+    
+</body>
+</html>
