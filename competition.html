@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CLASS COMPETITION</title>
+<style>
+    body {        
+        display: flex;
+        flex-direction: column;
+        background-color: blanchedalmond;        
+    }
+    .team_box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        background-color: black;
+        height: 50%;
+        
+    }
+    #allbtnbox {
+        width: 192px;
+        height: 70px;
+        
+    }
+
+    #allbtnbox:hover #btn_alpha {
+        width: 180px;
+        height: 60px;
+        background-color: white;
+        color: purple;
+        border: 3px solid purple;
+    }
+    #allbtnbox:hover #btn_beta {
+        width: 180px;
+        height: 60px;        
+        background-color: purple;
+        color: white;
+        border: 3px solid purple;
+    }
+    #btn_alpha {
+        position: relative;
+        width: 180px;
+        height: 60px;
+        background-color: purple;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 7px;
+        text-align: center;
+        line-height: 42px;
+        color: white;
+        font-family: Cambria, serif;
+        font-size: 20px;
+        z-index: 2;
+        border: 3px solid purple;
+        transition-property: background-color, color, border;
+        transition-duration: 4s;
+        transition-delay: 0.4s;
+    }
+   
+    #btn_beta {
+        position: relative;
+        width: 180px;
+        height: 60px;
+        bottom: 52px;
+        left: 10px;
+        background-color: white;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 7px;
+        text-align: center;
+        line-height: 28px;
+        color: purple;
+        font-family: Cambria, serif;
+        font-size: 20px;
+        border: 3px solid purple;
+        z-index: 1;
+        transition-property: background-color, color;
+        transition-duration: 4s;
+        transition-delay: 0.4s;
+    }
+
+
+    #mynav {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        }
+    #mynav a {
+        color: white;
+        width: 175px;
+        padding: 10px;
+        height: 26px;
+        font-family: sans-serif;
+        font-size: 13px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: hidden;
+        transition-property: width, border-bottom;
+        transition-duration: 4s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in-out;
+                
+    }
+
+    #mynav a:hover {
+        color: whitesmoke;
+        font-size: 13px;         
+        border-bottom: 4px solid white;
+        width: 200px;
+        height: 26px;
+        font-family: sans-serif;
+        text-align: center;
+        
+    }
+    
+
+
+</style>
+</head>
+<body>    
+<div class="team_box" style = "position: absolute;
+top: 0px; left: 0px; justify-content: center; align-items: center;
+background-color: white; ">
+
+<div id="allbtnbox">
+    <div id="btn_alpha">GET STARTED</div>
+    <div id="btn_beta">GET STARTED</div>
+</div><!-- close allbtnbox -->
+
+</div><!-- close team_box -->
+
+<div class="team_box">
+    <div id="mynav">
+        <a href="#">HOME</a>
+        <a href="#">PRODUCTS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">GALLERY</a>
+        <a href="#">TESTIMONIALS</a>
+        <a href="#">SIGN UP</a>
+        <a href="#">FAQ</a>
+
+    </div>
+
+
+</div>
+
+ 
+    
+</body>
+</html>
